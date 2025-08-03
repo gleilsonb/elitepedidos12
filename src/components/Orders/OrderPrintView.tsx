@@ -577,6 +577,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
             font-weight: bold !important;
+            text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
           }
 
           * {
@@ -586,6 +587,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             print-color-adjust: exact !important;
             box-sizing: border-box !important;
             font-weight: bold !important;
+            text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
           }
 
           .print\\:hidden {
@@ -622,6 +624,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             height: auto !important;
             overflow: visible !important;
             font-family: 'Courier New', monospace !important;
+            text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
             font-size: 14px !important;
             line-height: 1.3 !important;
             color: #000000 !important;
@@ -649,6 +652,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             background: #ffffff !important;
             display: block !important;
             visibility: visible !important;
+            text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
             font-weight: bold !important;
           }
 
