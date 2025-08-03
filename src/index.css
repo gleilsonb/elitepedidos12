@@ -2,13 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global print styles for better text contrast and legibility */
+/* Global styles for bold text */
+* {
+  font-weight: bold !important;
+  text-shadow: 0 0 0.1px #000000 !important;
+}
+
+html, body {
+  font-weight: bold !important;
+  text-shadow: 0 0 0.1px #000000 !important;
+}
+
+/* Print styles for darker, more legible text */
 @media print {
   @page {
     size: 80mm auto;
     margin: 0 !important;
   }
-  
+
   html, body {
     font-family: 'Courier New', monospace !important;
     font-size: 14px !important;
@@ -22,8 +33,9 @@
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     font-weight: bold !important;
+    text-shadow: 0 0 0.1px #000000 !important;
   }
-  
+
   * {
     color: #000000 !important;
     background: #ffffff !important;
@@ -33,23 +45,25 @@
     font-weight: bold !important;
     text-shadow: 0 0 0.1px #000000 !important;
   }
-  
-  /* Ensure all text elements are dark and bold */
-  p, div, span, h1, h2, h3, h4, h5, h6 {
+
+  /* Ensure all text elements are bold and dark */
+  p, div, span, h1, h2, h3, h4, h5, h6, td, th, li {
     color: #000000 !important;
-    background: #ffffff !important;
     font-weight: bold !important;
     text-shadow: 0 0 0.1px #000000 !important;
   }
-  
+
   /* Make borders and lines darker */
-  .separator, .border-dashed {
+  .separator, 
+  [style*="border"],
+  [style*="border-top"],
+  [style*="border-bottom"] {
     border-color: #000000 !important;
   }
-  
-  /* Ensure images maintain visibility */
+
+  /* Ensure images print properly */
   img {
-    opacity: 1 !important;
-    filter: contrast(1.2) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }
