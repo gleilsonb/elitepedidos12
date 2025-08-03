@@ -18,12 +18,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
 
   const handlePrint = () => {
     // Criar uma nova janela com conteúdo específico para impressão térmica
-   
-    if (!printWindow) {
-      alert('Por favor, permita pop-ups para imprimir');
-      return;
-    }
-
+  
     const printContent = `
       <!DOCTYPE html>
       <html>
