@@ -563,54 +563,56 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             size: 80mm auto;
             margin: 0 !important;
           }
-          
+
           html, body {
             font-family: 'Courier New', monospace !important;
-            font-size: 12px !important;
+            font-size: 14px !important;
             line-height: 1.4 !important;
-            color: black !important;
-            background: white !important;
+            color: #000000 !important;
+            background: #ffffff !important;
             margin: 0 !important;
             padding: 0 !important;
             width: 100% !important;
             height: auto !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
+            font-weight: bold !important;
           }
-          
+
           * {
-            color: black !important;
-            background: white !important;
+            color: #000000 !important;
+            background: #ffffff !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
             box-sizing: border-box !important;
+            font-weight: bold !important;
           }
-          
+
           .print\\:hidden {
             display: none !important;
           }
-          
+
           .print\\:block {
             display: block !important;
             visibility: visible !important;
           }
-          
+
           .print\\:w-full {
             width: 100% !important;
           }
-          
+
           .print\\:h-full {
             height: 100% !important;
           }
-          
+
           .print\\:bg-white {
-            background: white !important;
+            background: #ffffff !important;
           }
-          
+
           .print\\:text-black {
-            color: black !important;
+            color: #000000 !important;
           }
-          
+
           /* Force visibility for thermal printing */
           .thermal-print-content {
             display: block !important;
@@ -620,14 +622,15 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             height: auto !important;
             overflow: visible !important;
             font-family: 'Courier New', monospace !important;
-            font-size: 12px !important;
+            font-size: 14px !important;
             line-height: 1.3 !important;
-            color: black !important;
-            background: white !important;
+            color: #000000 !important;
+            background: #ffffff !important;
             padding: 2mm !important;
             margin: 0 !important;
+            font-weight: bold !important;
           }
-          
+
           /* Remove all transforms and effects */
           .thermal-print-content * {
             transform: none !important;
@@ -635,18 +638,20 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             border-radius: 0 !important;
             opacity: 1 !important;
             visibility: visible !important;
+            font-weight: bold !important;
           }
-          
+
           /* Ensure text is visible */
           .thermal-print-content p,
           .thermal-print-content div,
           .thermal-print-content span {
-            color: black !important;
-            background: white !important;
+            color: #000000 !important;
+            background: #ffffff !important;
             display: block !important;
             visibility: visible !important;
+            font-weight: bold !important;
           }
-          
+
           /* Images for thermal printing */
           .thermal-print-content img {
             max-width: 60mm !important;
