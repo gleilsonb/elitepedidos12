@@ -577,6 +577,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
             font-weight: bold !important;
+            font-weight: bold !important;
             text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
           }
 
@@ -629,7 +630,6 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             line-height: 1.3 !important;
             color: #000000 !important;
             background: #ffffff !important;
-            padding: 2mm !important;
             margin: 0 !important;
             font-weight: bold !important;
           }
@@ -657,11 +657,12 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
           }
           
           /* Images for thermal printing */
-          .thermal-print-content img {
-            max-width: 60mm !important;
+            color: #000000 !important;
+            background: #ffffff !important;
             height: auto !important;
             display: block !important;
             margin: 5mm auto !important;
+            font-weight: bold !important;
           }
         }
       `}</style>
