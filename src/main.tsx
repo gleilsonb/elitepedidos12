@@ -88,7 +88,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
           <img src="/logo elite.jpeg" alt="Elite Açaí Logo" style="width: 60mm; height: auto; margin: 5px auto; display: block;">
           <div class="bold" style="font-size: 16px;">ELITE AÇAÍ</div>
           <div class="small">Delivery Premium</div>
-          <div class="small">Rua Dois, 2130-A</div>
+          <div class="small">Rua Um, 1614-C</div>
           <div class="small">Residencial 1 - Cágado</div>
           <div class="small">Tel: (85) 98904-1010</div>
           <div class="small">CNPJ: ${storeSettings?.cnpj || '38.130.139/0001-22'}</div>
@@ -334,7 +334,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
               <div className="text-center mb-4">
                 <p className="font-bold text-lg">ELITE AÇAÍ</p>
                 <p className="text-sm">Delivery Premium</p>
-                <p className="text-xs">Rua Dois, 2130-A</p>
+                <p className="text-xs">Rua Um, 1614-C</p>
                 <p className="text-xs">Residencial 1 - Cágado</p>
                 <p className="text-xs">Tel: (85) 98904-1010</p>
                 <p className="text-xs">CNPJ: {storeSettings?.cnpj || '38.130.139/0001-22'}</p>
@@ -577,6 +577,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
             font-weight: bold !important;
+            font-weight: bold !important;
             text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
           }
 
@@ -586,6 +587,7 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
             box-sizing: border-box !important;
+            font-weight: bold !important;
             font-weight: bold !important;
             text-shadow: 0 0 0.1px #000000; /* Adiciona uma leve sombra para escurecer o texto */
           }
@@ -628,7 +630,6 @@ const OrderPrintView: React.FC<OrderPrintViewProps> = ({ order, storeSettings, o
             font-size: 14px !important;
             line-height: 1.3 !important;
             color: #000000 !important;
-            background: #ffffff !important;
             padding: 2mm !important;
             margin: 0 !important;
             font-weight: bold !important;
